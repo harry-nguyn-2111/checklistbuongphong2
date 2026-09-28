@@ -469,10 +469,10 @@ with st.expander("⚙️ Hướng dẫn cấu hình MySQL / Aiven"):
 
         ```toml
         [mysql]
-        host = "YOUR_AIVEN_HOST"
-        port = 12345
+        host = "mysql-425beae-quantricongngheso.d.aivencloud.com"
+        port = 28430
         user = "avnadmin"
-        password = "YOUR_PASSWORD"
+        password = "AVNS_rh-nVNeJhxVV2BtOJfT"
         database = "defaultdb"
         ssl_mode = "REQUIRED"
         ```
