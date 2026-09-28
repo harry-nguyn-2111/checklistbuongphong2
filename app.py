@@ -104,11 +104,11 @@ def get_database_config():
             "ssl_ca": os.getenv("MYSQL_SSL_CA") or secret_value("mysql", "ssl_ca"),
         }
 
-    host = get_setting("MYSQL_HOST")
-    port = get_setting("MYSQL_PORT", 3306)
-    user = get_setting("MYSQL_USER", "avnadmin")
-    password = get_setting("MYSQL_PASSWORD")
-    database = get_setting("MYSQL_DATABASE", "defaultdb")
+    host = get_setting("mysql-425beae-quantricongngheso.d.aivencloud.com")
+    port = get_setting("28430", 3306)
+    user = get_setting("avnadmin", "avnadmin")
+    password = get_setting("AVNS_rh-nVNeJhxVV2BtOJfT")
+    database = get_setting("defaultdb", "defaultdb")
     ssl_mode = str(get_setting("MYSQL_SSL_MODE", "REQUIRED")).upper()
     ssl_ca = get_setting("MYSQL_SSL_CA")
 
@@ -469,10 +469,10 @@ with st.expander("⚙️ Hướng dẫn cấu hình MySQL / Aiven"):
 
         ```toml
         [mysql]
-        host = "mysql-425beae-quantricongngheso.d.aivencloud.com"
-        port = 28430
+        host = "YOUR_AIVEN_HOST"
+        port = 12345
         user = "avnadmin"
-        password = "AVNS_rh-nVNeJhxVV2BtOJfT"
+        password = "YOUR_PASSWORD"
         database = "defaultdb"
         ssl_mode = "REQUIRED"
         ```
