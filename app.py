@@ -104,13 +104,13 @@ def get_database_config():
             "ssl_ca": os.getenv("MYSQL_SSL_CA") or secret_value("mysql", "ssl_ca"),
         }
 
-    host = mysql-425beae-quantricongngheso.d.aivencloud.com
-    port = 28430
-    user = avnadmin
-    password = AVNS_rh-nVNeJhxVV2BtOJfT
-    database = defaultdb
-    ssl_mode = REQUIRED
-    ssl_ca = get_setting("MYSQL_SSL_CA")
+host = "mysql-425beae-quantricongngheso.d.aivencloud.com"
+port = 28430
+user = "avnadmin"
+password = "MẬT_KHẨU_AIVEN"
+database = "defaultdb"
+ssl_mode = "REQUIRED"
+ssl_ca = None
 
     if not host or not password:
         raise RuntimeError(
